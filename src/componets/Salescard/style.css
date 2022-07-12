@@ -4,16 +4,12 @@ main .card{
 
   padding: 1.8rem 0.6rem;
   margin: 0 auto;
-  /* border: 1px solid red; */
-  /* width: 18.75rem;
-  height: 55.8rem; */
+
 }
 
 .paragraph{
   margin-bottom: 1.25rem;
   font-size: 1.5rem;
-  /* padding-left: 1rem;
-  padding-top: 2rem; */
   color: #676FFF;
   font-weight: bold;
 }
