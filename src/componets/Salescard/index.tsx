@@ -1,9 +1,18 @@
+import { useState } from "react";
 import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
-import NotificationButton from '../NotificationButton'
-import './style.css'
+import NotificationButton from '../NotificationButton';
+import './style.css';
 
 function Salescard() {
+
+  const min = new Date(new Date().setDate(new Date().getDate() - 730));
+  const max = new Date();
+
+  const [minData, setMinDate] = useState(min);
+  const [maxData, setMaxDate] = useState(max);
+
+
   return (
     <div className="card">
       <p className="paragraph">Vendas</p>
@@ -11,16 +20,16 @@ function Salescard() {
       <div className="input-container">
         <div >
           <DatePicker
-            selected={new Date()}
-            onChange={(date: Date) => { }}
+            selected={minData}
+            onChange={(date: Date) => setMinDate(date)}
             className="input"
             dateFormat="dd/MM/yyyy"
           />
         </div>
         <div>
           <DatePicker
-            selected={new Date()}
-            onChange={(date: Date) => { }}
+            selected={maxData}
+            onChange={(date: Date) => setMaxDate(date)}
             className="input"
             dateFormat="dd/MM/yyyy"
           />
@@ -102,4 +111,4 @@ function Salescard() {
   )
 }
 
-export default Salescard
+export default Salescard;
