@@ -1,0 +1,134 @@
+main .card{
+  background-color:rgba(40, 49, 66, 1);
+  border-radius: 0.62rem;
+
+  padding: 1.8rem 0.6rem;
+  margin: 0 auto;
+  /* border: 1px solid red; */
+  /* width: 18.75rem;
+  height: 55.8rem; */
+}
+
+.paragraph{
+  margin-bottom: 1.25rem;
+  font-size: 1.5rem;
+  /* padding-left: 1rem;
+  padding-top: 2rem; */
+  color: #676FFF;
+  font-weight: bold;
+}
+
+.input-container{
+  margin-bottom: 1rem;
+}
+
+.input{
+  background: #1B2531;
+  border: 1px solid #384459;
+
+  max-width: 300px;
+  max-height: 46px;
+
+  width: 280px;
+  height: 46px;
+  border-radius: 0.31rem;
+  margin-top: 1rem;
+  display: flex;
+
+  padding: 0 1.25rem;
+  color:#9AAABE;
+  font-size: 1.25rem;
+}
+
+.sales-table{
+  width: 100%;
+  border-spacing: 0;
+  border-collapse: collapse;
+}
+
+.sales-table thead tr th{
+  width: 17.5rem;
+  height: 3.4rem;
+  font-size: 1rem;
+  font-weight: 700;
+  
+
+  color: #E9E9E9;
+
+}
+
+.sales-table tbody{
+  font-size: 0.8rem;
+  font-weight: 400;
+  color: #CFCFCF;
+  text-align: center;
+
+}
+
+.sales-table tbody tr{
+  height: 4.6rem;
+  background-color: #283142;
+  border-top: 1px solid #5F6E82;
+  /* transition: 0.5ms; */
+}
+
+.sales-table tbody tr:hover >td {
+  background-color: #384459;
+}
+
+.sales-table tbody tr:nth-child(odd){
+  background-color: #242C3B;
+}
+/* ======================================================= */
+.logo-red-container{
+  display: flex;
+  justify-content: center;
+}
+
+.logo-red{
+  height: 45px;
+  width: 45px;
+
+  background: rgba(255, 107, 114, 0.1);
+  border: 1px solid #FF6B72;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.logo-red img{
+  width: 19px;
+}
+
+.show{
+  display: none;
+}
+
+.show992{
+  display: none;
+}
+
+@media (min-width: 576px) {
+  .show{
+    display: table-cell;
+  }
+
+  main .card{
+    padding:3.5rem;
+  }
+
+  .sales-table tbody tr{
+    height: 3.4rem;
+
+  }
+  .sales-table tbody{
+    font-size: 1.12rem;
+  }
+}
+@media (min-width: 992px) {
+  .show992{
+    display: table-cell;
+  }
+}

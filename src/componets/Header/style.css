@@ -1,0 +1,25 @@
+.header h1{
+  margin-top: 0.92rem;
+}
+
+.header img{
+  margin-top: 1.72rem;
+}
+
+.header{
+  background: linear-gradient(#102347 0%, #181818 100%);
+
+  text-align: center;
+  margin: 0 auto;
+  /* width: 20rem; */
+  height: 13.75rem;
+}
+
+.header a:hover{
+  text-decoration: underline;
+}
+
+.header a{
+  text-decoration: none;
+  color: #FFF;
+}

@@ -1,0 +1,33 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  font-family: 'Roboto', sans-serif;
+
+  color: #FFF;
+  background-color: #181818;
+}
+.header{
+  background: linear-gradient(#102347 0%, #181818 100%);
+
+  text-align: center;
+  margin: 0 auto;
+  height: 13.75rem;
+}
+
+.header a:hover{
+  text-decoration: underline;
+}
+
+#sales{
+  padding: 2.5rem 0.6rem;
+}
+
+main .container{
+  margin: 0 auto;
+  max-width: 56.25rem;
+  max-height: 50.9rem;
+}
