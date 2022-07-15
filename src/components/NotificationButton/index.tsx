@@ -2,6 +2,7 @@ import './style.css';
 import icon from '../../assets/Vector.svg';
 import axios from "axios";
 import { BASE_URL } from '../../utils/request';
+import { toast } from 'react-toastify';
 
 type prpos = {
   saleid: number
@@ -11,6 +12,7 @@ function handleClick(id: number) {
   axios(`${BASE_URL}/sales/${id}/notification`)
     .then(response => {
       console.log("sucesso");
+      toast.info("SMS foi enviado com sucesso!");
     })
 }
 
