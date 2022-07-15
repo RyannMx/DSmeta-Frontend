@@ -1,4 +1,5 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
+import axios from "axios";
 import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
 import NotificationButton from '../NotificationButton';
@@ -12,6 +13,12 @@ function Salescard() {
   const [minData, setMinDate] = useState(min);
   const [maxData, setMaxDate] = useState(max);
 
+  useEffect(() => {
+    axios.get("https://dsmeta-ryan.herokuapp.com/sales")
+      .then(response => {
+        console.log(response.data);
+      });
+  }, []);
 
   return (
     <div className="card">
